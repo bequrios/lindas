@@ -1,3 +1,8 @@
+from pyodide.ffi import to_js
+from IPython.display import JSON, HTML
+from js import Object, fetch
+from io import StringIO
+
 async def query(query_string, store = "L"):
     
     # three Swiss triplestores
