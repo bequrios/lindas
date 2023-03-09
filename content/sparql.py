@@ -1,4 +1,5 @@
 import json
+import pandas as pd
 from pyodide.ffi import to_js
 from IPython.display import JSON, HTML
 from js import Object, fetch
