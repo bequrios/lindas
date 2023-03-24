@@ -12,8 +12,10 @@ async def query(query_string, store = "L"):
         address = 'https://fedlex.data.admin.ch/sparqlendpoint'
     elif store == "G":
         address = 'https://geo.ld.admin.ch/query'
-    else:
+    elif store == "L":
         address = 'https://ld.admin.ch/query'
+    else:
+        address = store
     
     # try the Post request with help of JS fetch
     # the creation of the request header is a little bit complicated because it needs to be a 
