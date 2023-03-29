@@ -27,7 +27,6 @@ jupyterlab_miami_nights
 
 # Python: ipywidget library for Jupyter notebooks (optional)
 ipywidgets>=8.0.0,<9
-widgetsnbextension==4.0.6
 # Python: ipyevents library for Jupyter notebooks (optional)
 ipyevents>=2.0.1
 # Python: interative Matplotlib library for Jupyter notebooks (optional)
@@ -42,7 +41,7 @@ plotly>=5,<6
 bqplot
 
 # Cytoscape
-# ipycytoscape
+ipycytoscape
 
 # Networkx
-# networkx
+networkx
