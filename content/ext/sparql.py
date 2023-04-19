@@ -5,7 +5,7 @@ from IPython.display import JSON, HTML
 from js import Object, fetch
 from io import StringIO
 
-async def query(query_string, store = "L", set_na = True):
+async def query(query_string, store = "L", set_na = False):
     
     # three Swiss triplestores
     if store == "F":
