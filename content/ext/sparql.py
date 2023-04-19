@@ -5,7 +5,7 @@ from IPython.display import JSON, HTML
 from js import Object, fetch
 from io import StringIO
 
-async def query(query_string, store = "L"):
+async def query(query_string, store = "L", set_na = True):
     
     # three Swiss triplestores
     if store == "F":
@@ -43,7 +43,7 @@ async def query(query_string, store = "L"):
             raise RuntimeError("SPARQL query malformed: " + res)
         else:
             # if everything works out, create a pandas dataframe from the csv result
-            df = pd.read_csv(StringIO(res))
+            df = pd.read_csv(StringIO(res), na_filter = set_na)
             return df
     else:
         # fedlex.data.admin.ch throws error with response status 400
