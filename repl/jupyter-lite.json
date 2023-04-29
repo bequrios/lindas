@@ -11,7 +11,8 @@
       "contentsStorageDrivers": ["memoryStorageDriver"],
       "disabledExtensions": [
       "ipyparallel-labextension"
-      ]
+      ],
+      "appName": "LINDAS"
     }
   }
   
